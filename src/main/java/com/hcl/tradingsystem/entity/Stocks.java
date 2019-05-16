@@ -9,41 +9,75 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="stocks")
-public class Stocks implements Serializable{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long StockId;	
-	private String ComapnyName;
-	private Double Price;
-	private Integer StockQty;
-	public Long getStockId() {
-		return StockId;
+	@Table(name="stocks")
+
+	public class Stocks implements Serializable{
+
+
+		private static final long serialVersionUID = 1L;
+
+		@Id
+
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+
+		private Long StockId;	
+
+		private String ComapnyName;
+
+		private Double Price;
+
+		private Integer StockQty;
+
+		public Long getStockId() {
+
+			return StockId;
+
+		}
+
+		public void setStockId(Long stockId) {
+
+			StockId = stockId;
+
+		}
+
+		public String getComapnyName() {
+
+			return ComapnyName;
+
+		}
+
+		public void setComapnyName(String comapnyName) {
+
+			ComapnyName = comapnyName;
+
+		}
+
+		public Double getPrice() {
+
+			return Price;
+
+		}
+
+		public void setPrice(Double price) {
+
+			Price = price;
+
+		}
+
+		public Integer getStockQty() {
+
+			return StockQty;
+
+		}
+
+		public void setStockQty(Integer stockQty) {
+
+			StockQty = stockQty;
+
+		}	
+
 	}
-	public void setStockId(Long stockId) {
-		StockId = stockId;
-	}
-	public String getComapnyName() {
-		return ComapnyName;
-	}
-	public void setComapnyName(String comapnyName) {
-		ComapnyName = comapnyName;
-	}
-	public Double getPrice() {
-		return Price;
-	}
-	public void setPrice(Double price) {
-		Price = price;
-	}
-	public Integer getStockQty() {
-		return StockQty;
-	}
-	public void setStockQty(Integer stockQty) {
-		StockQty = stockQty;
-	}	
-}
+	
+
+
