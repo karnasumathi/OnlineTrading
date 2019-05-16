@@ -45,5 +45,18 @@ public class Stocks implements Serializable{
 	}
 	public void setStockQty(Integer stockQty) {
 		StockQty = stockQty;
+	}
+	public Stocks(Long stockId, String comapnyName, Double price, Integer stockQty) {
+		super();
+		StockId = stockId;
+		ComapnyName = comapnyName;
+		Price = price;
+		StockQty = stockQty;
 	}	
+	
+	public Stocks() {
+		
+	}
+	
+	
 }

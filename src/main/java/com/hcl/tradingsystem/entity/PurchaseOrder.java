@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="stocks")
+@Table(name="purchaseorder")
 public class PurchaseOrder implements Serializable{
 
 	/**
