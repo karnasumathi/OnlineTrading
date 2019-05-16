@@ -9,10 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Table(name="purchaseorder")
+public class PurchaseOrder implements Serializable{
 
-@Table(name = "purchaseorder")
-
-public class PurchaseOrder implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
