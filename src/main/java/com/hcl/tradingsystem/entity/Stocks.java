@@ -1,3 +1,4 @@
+
 package com.hcl.tradingsystem.entity;
 
 import java.io.Serializable;
@@ -60,3 +61,4 @@ public class Stocks implements Serializable{
 	
 	
 }
+
