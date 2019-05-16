@@ -1,24 +1,20 @@
 package com.hcl.tradingsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.hcl.tradingsystem.repo.StockRepo;
+import com.hcl.tradingsystem.repository.UserRepository;
 
-@Service
-@Transactional
 public class ConfirmOrderService {
 	
 	@Autowired
+	UserRepository userRepo;
+
+	@Autowired
 	private StockRepo stockRepo;
-	String message="no";
-	
-	public void confirmOrder(Long userId,Long stockId) {
-		if(message.equalsIgnoreCase("no")) {
-			stockRepo.getOne(stockId);
-			
-		}
+	Character confirmOrder='n';
+	public void confirmOrder(Long stockId ,Long userId) {
+		
 	}
 
 }
