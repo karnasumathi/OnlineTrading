@@ -68,4 +68,3 @@ public class PurchaseOrder implements Serializable{
 		this.confirmOrder = confirmOrder;
 	}
 }
-	
